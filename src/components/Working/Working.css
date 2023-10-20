@@ -1,0 +1,110 @@
+.working__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.working__details{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem
+}
+.working__card {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.working__card .card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem;
+    /* row-gap: 8rem; */
+}
+.working__card .card:nth-child(2) .video{
+    order: 2;
+}
+.working__card  .video{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+.working__card  .video > video{
+    width: 100%;
+    height: auto;
+    /* display: block; */
+    display: grid;
+    place-items: center;
+}
+.working__card  .video > img{
+    width: 100%;
+    height: auto;
+}
+
+.working__card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.working__card-content  .text{
+    line-height: 1.8;
+}
+.working__card-content  .text{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+.working__card-content  .text > span:nth-child(1){
+    padding-top: 5px;
+    font-size: 2.5rem;
+    color: var(--extra-color-3);
+}
+.working__card-content > div > .text > span:nth-child(2){
+    line-height: 1.8;
+}
+
+.working__card-content > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+
+
+
+
+
+/* =========MEDIA QUERIES(MEDIAM SCREEN)======== */
+@media screen and (max-width: 1024px) {
+    #how__it__work .container{
+        width: 70%;
+    }
+    .working__card .card{
+        grid-template-columns: 1fr;
+        gap: 8rem;
+    }
+    .working__card .card:nth-child(2) .working__card-content{
+        order: 2;
+    }
+  
+  }
+  
+  
+  /* =========MEDIA QUERIES(SMALL SCREEN)======== */
+  @media screen and (max-width: 678px) {
+    #how__it__work .container{
+        width: 90%;
+    }
+    .working__card{
+        gap: 8rem;
+    }
+  }

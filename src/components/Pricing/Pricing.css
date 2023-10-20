@@ -1,0 +1,284 @@
+.pricing__bg{
+    padding: 10rem 0;
+    background: var(--color--cyan-bluish-gray);
+}
+.pricing__container > .heading{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.toggle{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.toggle > button{
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 110px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+}
+.toggle > .annual.bold{
+    font-weight: 800;
+}
+.toggle > .monthly.Mbold{
+    font-weight: 800;
+}
+
+.pricing__card-content{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+.pricing__card{
+    padding: 3rem;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+.pricing__card:hover{
+    transform: scale(1.05);
+}
+.pricing__card-icon{
+    width: 70px;
+}
+.pricing__card-icon > img{
+    width: 100%;
+}
+.pricing__card .price{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.pricing__card > .sub__heading{
+    font-size: 2rem;
+}
+.pricing__card .price > span:nth-child(2){
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--extra-color-3);
+}
+.pricing__card .price > span:nth-child(1){
+    font-size: 1.5rem;
+    font-size: 700;
+    margin-top: -25px;
+}
+.pricing__card .price > span:nth-child(3){
+    font-size: 1.7rem;
+    font-size: 700;
+    margin-bottom: -25px;
+}
+.price__description{
+    margin-top: 2rem;
+}
+.price__description-content{
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.price__description-content > span > .feature__icon{
+    font-size: 1.3rem;
+    color: #9f9f9f;
+}
+.price__description-content > span > .feature__icon.active{
+    color: var(--extra-color-3);
+}
+.price__description-content > .text{
+    color: var(--font--color-text);
+    font-size: 1.7rem;
+}
+.price__description-content > .text.textActive{
+    color: var(--font--color-heading);
+}
+/* ============free trial========== */
+.free__trial{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+}
+.free__trial-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.free__trial-left > .heading{
+    font-size: 4rem;
+    max-width: 600px;
+    width: 100%;
+    letter-spacing: 0.-1px;
+}
+.free__trial-left > small{
+    font-size: 1.5rem;
+}
+.free__trial-left > .text{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+.free__trial__left-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.free__trial__left-content > div{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.free__trial__left-content > div > .text:nth-child(1){
+    width: 290px;
+}
+.free__trial__left-content > div > .text{
+    font-size: 1.18rem;
+    font-weight: 800;
+}
+.free__trial-right > form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: var(--extra-color-3);
+    padding: 5rem;
+    align-items: center;
+    border-radius: 5px;
+    gap: 2rem;
+}
+.free__trial-right > form > .sub__heading{
+    color: var(--color--white);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.free__trial-right > form > input[type=text]{
+    width: 70%;
+    padding: 1.2rem 2rem;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+.free__trial-right > form > div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.free__trial-right > form > div > input{
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: 4rem;
+}
+.free__trial-right > form > div > small{
+    font-size: 1.2rem;
+    color: var(--color--white);
+}
+.free__trial-right > form > .nav__btn{
+    width: 70%;
+    font-size: 1.2rem;
+    display: grid;
+    place-items: center;
+}
+.free__trial-right > form > .risk{
+    font-size: 1.3rem;
+    color: var(--color--white);
+}
+.free__trial-right > form > small{
+    margin-top: -15px;
+    font-size: 1.3rem;
+    color: var(--color--white);
+}
+
+
+
+
+
+
+
+
+
+
+/* =========MEDIA QUERIES(MEDIAM SCREEN)======== */
+@media screen and (max-width: 1024px) {
+    .pricing__card-content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+    .free__trial{
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+  
+  }
+  
+
+  
+  /* =========MEDIA QUERIES(SMALL SCREEN)======== */
+  @media screen and (max-width: 678px) {
+    .pricing__card-content{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .price__description{
+        margin-top: 0rem;
+    }
+    .price__description-content{
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    /* ==========free trial========= */
+    .free__trial-left > .heading{
+        font-size: 3.5rem;
+        width: 100%;
+    }
+    .free__trial-left > small{
+        width: 95%;
+    }
+    .free__trial__left-content{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .free__trial__left-content > div{
+        align-items: start;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .free__trial__left-content > div > .text:nth-child(1){
+        width: 100%;
+    }
+    .free__trial-right > form{
+        padding: 5rem 2rem;
+    }
+    .free__trial-right > form > .sub__heading{
+        font-size: 2.2rem;
+    }
+    .free__trial-right > form > input[type=text]{
+        width: 100%;
+        padding: 1.2rem 2rem;
+    }
+    
+    .free__trial-right > form > div > small{
+        font-size: 1.2rem;
+        color: var(--color--white);
+    }
+    .free__trial-right > form > .nav__btn{
+        width: 100%;
+    }
+    .free__trial-right > form > .risk{
+        font-size: 1.3rem;
+    }
+  
+  }

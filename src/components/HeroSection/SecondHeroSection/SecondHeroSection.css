@@ -1,0 +1,45 @@
+.secondHeroSection__img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.secondherosection__container > img{
+    width: 100%;
+    height: auto;
+}
+.feature__in{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+}
+.feature__in > h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.marqueeAutoSlider{
+    width: 100%;
+    height: 120px;
+    margin: 0 auto ;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* =========MEDIA QUERIES(SMALL SCREEN)======== */
+@media screen and (max-width: 678px) {
+    .marqueeAutoSlider{
+        height: 100px;
+    }
+    
+}

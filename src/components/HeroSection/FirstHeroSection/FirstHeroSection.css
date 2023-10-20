@@ -1,0 +1,105 @@
+#hero{
+    margin-top: 9rem;
+    /* background-image: linear-gradient(-90deg, red, yellow);
+    background-image: linear-gradient(90deg, var(--color--white), var(--extra-color-3));
+    border-radius: 0 0 10% 10%; */
+    overflow: hidden;
+}
+.firsthero__container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.firstHero__left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.3rem;
+}
+.typed__container{
+    display: flex;
+    flex-direction: column;
+}
+.firsthero__heading{
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--font--color-heading);
+    text-align: center;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+.firsthero__heading > span{
+    color: var(--extra-color-3);
+}
+.firstHero__left > .text{
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto 0;
+    line-height: 1.8;
+    text-align: center;
+    font-weight: 500;
+}
+.firsthero__img > img{
+    width: 250px;
+}
+.firstHero__left > .nav__btn{
+    padding: 1.5rem 3.5rem;
+}
+.firstHero__left > .firstHero__btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+.firstHero__left > .firstHero__btn > small{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.firstHero__video > .lottie__hero{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* =========MEDIA QUERIES(MEDIAM SCREEN)======== */
+@media screen and (max-width: 1024px) {
+    #hero{
+        padding-top: 15rem;
+        padding-bottom: 0rem;
+    }
+    .firsthero__heading{
+        font-size: 3rem;
+    }
+    .firsthero__container{
+        height: auto;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+  
+  }
+  
+  /* =========MEDIA QUERIES(SMALL SCREEN)======== */
+  @media screen and (max-width: 678px) {
+    #hero{
+        padding-top: 10rem;
+        padding-bottom: 0rem;
+    }
+    .firsthero__container{
+        height: auto;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .firsthero__heading{
+        font-size: 2.5rem;
+        line-height: 1.4;
+    }
+  
+  }

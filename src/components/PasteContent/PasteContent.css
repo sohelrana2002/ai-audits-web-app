@@ -1,0 +1,81 @@
+.pasteContent__container .heading:nth-child(1){
+    font-size: 3.5rem;
+    font-weight:700;
+    margin-bottom:  0rem;
+}
+.pasteContent__container .text{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.pasteContent__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0 5rem;
+    justify-content: center;
+    gap: 2rem;
+}
+.pasteContent__container > .heading{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+.pasteContent__container > input{
+    width: 60%;
+    height: 60px;
+    padding: 0 5rem;
+    border-radius: 2rem;
+    outline: none;
+    border: 2px solid var(--extra-color-3);
+}
+.pasteContent__container > input::placeholder{
+    font-size: 2rem;
+    display: grid;
+}
+.pasteContent__container > .nav__btn{
+    width: 30%;
+    display: grid;
+}
+.pasteContent__container > small{
+    font-size: 1.3rem;
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========MEDIA QUERIES(MEDIAM SCREEN)======== */
+@media screen and (max-width: 1024px) {
+    .pasteContent__container > input{
+        width: 70%;
+        padding: 0 5rem;
+        border-radius: 2rem;
+    }
+    .pasteContent__container > .nav__btn{
+        width: 50%;
+    }
+    
+  }
+  
+  
+  
+  /* =========MEDIA QUERIES(SMALL SCREEN)======== */
+  @media screen and (max-width: 678px) {
+    .pasteContent__container > input{
+        width: 100%;
+        padding: 0 5rem;
+        border-radius: 2rem;
+    }
+    .pasteContent__container > .heading{
+        font-size: 4rem;
+    }
+    .pasteContent__container > .nav__btn{
+        width: 100%;
+    }
+  }

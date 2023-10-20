@@ -1,0 +1,14 @@
+#FAQ{
+    margin-bottom: 10rem;
+}
+.faq__container > .heading{
+    text-align: center;
+}
+.faq__content{
+    max-width: 900px;
+    width: 100%;
+    margin: 10rem auto 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}

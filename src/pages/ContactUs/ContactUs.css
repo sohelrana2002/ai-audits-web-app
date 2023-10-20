@@ -1,0 +1,169 @@
+.contact__bg {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15rem 0;
+    background: var(--color--cyan-bluish-gray);
+}
+
+.contact__container {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 4rem;
+}
+
+.contact__left,
+.contact__right {
+    background: var(--color--white);
+    padding: 5rem 4rem;
+    border-radius: 1rem;
+}
+
+.contact__left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact__left > form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact__left>form>.input {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.contact__left>form label .text {
+    font-size: 1.5rem;
+}
+
+.contact__left>form>.input input,
+.contact__left>form textarea {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    margin-top: 5px;
+}
+
+.contact__right {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.contact__right>div {
+    margin-top: -41px;
+}
+.contact__left .nav__btn{
+    width: 25%;
+    display: grid;
+}
+.contact__bg  .heading{
+    margin-top: 10rem;
+    text-align: center;
+}
+.contact__card{
+    margin: 5rem auto 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    place-items: center;
+}
+.contact__card > .card{
+    background: var(--color--white);
+    padding: 7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.3);
+    width: 100%;
+}
+.contact__card > .card > .card__icon svg{
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.4);
+}
+.contact__card > .card > a{
+    background: var(--extra-color-3);
+    padding: 1rem 3rem;
+    border-radius: 3px;
+    color: var(--color--white);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 80%;
+    margin: 0 auto;
+}
+.des__card > .text{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+/* =========MEDIA QUERIES(MEDIAM SCREEN)======== */
+@media screen and (max-width: 1024px) {
+    .contact__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .contact__bg {
+        padding: 20rem 0 0rem;
+    }
+    .contact__card{
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 10rem;
+        gap: 5rem;
+    }
+    .contact__card > .card{
+        background: var(--color--white);
+        padding: 5rem 5rem;
+    }
+}
+
+
+
+/* =========MEDIA QUERIES(SMALL SCREEN)======== */
+@media screen and (max-width: 678px) {
+    .contact__bg {
+        padding: 15rem 0 0rem;
+    }
+
+    .contact__left,
+    .contact__right {
+        padding: 3rem 2rem;
+    }
+    .contact__left > form > .input {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .contact__left .nav__btn{
+        width: 100%;
+        display: grid;
+    }
+    .contact__card{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .contact__card > .card > a{
+        width: 100%;
+    }
+    
+}
