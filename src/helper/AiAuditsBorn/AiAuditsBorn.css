@@ -1,0 +1,17 @@
+.aiauditsBorn__container{
+    margin-top: -5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+.aiauditsBorn__container .born__content{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.aiauditsBorn__container .born__content .text{
+    line-height: 1.5;
+}

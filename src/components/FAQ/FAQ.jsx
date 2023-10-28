@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { faqData } from "../../data/Data";
 import FaqCard from "../../helper/FaqCard/FaqCard";
+import WantAction from "../../helper/WantAction/WantAction";
 
 import "./FAQ.css";
 
@@ -34,6 +35,7 @@ const FAQ = ({data}) => {
               );
             })}
         </div>
+            <WantAction />
       </div>
     </section>
   );
