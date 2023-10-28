@@ -15,3 +15,19 @@
 .aiauditsBorn__container .born__content .text{
     line-height: 1.5;
 }
+
+
+
+
+
+
+
+/* =========MEDIA QUERIES(SMALL SCREEN)======== */
+@media screen and (max-width: 678px) {
+    .aiauditsBorn__container .born__content{
+        width: 100%;
+    }
+    .aiauditsBorn__container .born__content .text{
+        line-height: 1.4;
+    }
+  }
