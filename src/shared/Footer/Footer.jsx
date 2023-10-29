@@ -30,7 +30,7 @@ const Footer = () => {
             <a href="#">Blog</a>
             <a href="#">Join our affiliate program</a>
             <a href="#">Ambassador program</a>
-            <a href="#">Privacy Policy</a>
+            <NavLink to="/privacy-policy">Privacy Policy</NavLink>
             <a href="#">Terms & Conditions</a>
           </div>
         </div>

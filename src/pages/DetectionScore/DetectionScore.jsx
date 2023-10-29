@@ -2,6 +2,7 @@ import { HashLink } from "react-router-hash-link";
 import { GiArchiveResearch } from "react-icons/gi";
 import { TbScoreboard } from "react-icons/tb";
 import { MdOutlineBatchPrediction } from "react-icons/md";
+import Heading from "../../helper/Heading/Heading";
 import "./DetectionScore.css";
 
 const DetectionScore = () => {
@@ -24,12 +25,7 @@ const DetectionScore = () => {
         </div>
 
         <div className="score__card" id="methodology">
-          <div className="card__heading">
-            <div className="card__icon">
-              <GiArchiveResearch />
-            </div>
-            <h6 className="sub__heading">Methodology</h6>
-          </div>
+          <Heading icon={<GiArchiveResearch />} title="Methodology" />
 
           <div className="score__text">
             <p className="text">
@@ -156,12 +152,7 @@ const DetectionScore = () => {
         </div>
 
         <div className="score__card" id="humanScore">
-          <div className="card__heading">
-            <div className="card__icon">
-              <TbScoreboard />
-            </div>
-            <h6 className="sub__heading">Human score</h6>
-          </div>
+          <Heading icon={<TbScoreboard />} title="Human score" />
 
           <div className="score__text">
             <p className="text">
@@ -187,12 +178,7 @@ const DetectionScore = () => {
         </div>
 
         <div className="score__card" id="predictionMap">
-          <div className="card__heading">
-            <div className="card__icon">
-              <MdOutlineBatchPrediction />
-            </div>
-            <h6 className="sub__heading">AI prediction map</h6>
-          </div>
+          <Heading icon={<MdOutlineBatchPrediction />} title="AI prediction map" />
 
           <div className="score__text">
             <p className="text">

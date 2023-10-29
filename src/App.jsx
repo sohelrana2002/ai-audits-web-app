@@ -7,6 +7,7 @@ import Footer from "./shared/Footer/Footer";
 import ScrollToTop from "./helper/ScrollToTop/ScrollToTop";
 import PlagiarismChecking from "./pages/PlagiarismChecking/PlagiarismChecking";
 import DetectionScore from "./pages/DetectionScore/DetectionScore";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 
 function App() {
   return (
@@ -27,11 +28,8 @@ function App() {
             path="/plagiarism-checking"
             element={<PlagiarismChecking />}
           />
-          <Route
-            exact
-            path="/detection-score"
-            element={<DetectionScore />}
-          />
+          <Route exact path="/detection-score" element={<DetectionScore />} />
+          <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
         <Footer />
       </BrowserRouter>
