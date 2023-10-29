@@ -8,6 +8,7 @@ import ScrollToTop from "./helper/ScrollToTop/ScrollToTop";
 import PlagiarismChecking from "./pages/PlagiarismChecking/PlagiarismChecking";
 import DetectionScore from "./pages/DetectionScore/DetectionScore";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions/TermsConditions";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           />
           <Route exact path="/detection-score" element={<DetectionScore />} />
           <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route exact path="/terms-conditions" element={<TermsConditions />} />
         </Routes>
         <Footer />
       </BrowserRouter>

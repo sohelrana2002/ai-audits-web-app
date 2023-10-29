@@ -31,7 +31,7 @@ const Footer = () => {
             <a href="#">Join our affiliate program</a>
             <a href="#">Ambassador program</a>
             <NavLink to="/privacy-policy">Privacy Policy</NavLink>
-            <a href="#">Terms & Conditions</a>
+            <NavLink to="/terms-conditions">Terms & Conditions</NavLink>
           </div>
         </div>
       </div>
